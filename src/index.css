@@ -1,13 +1,147 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+    'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration-skip-ink: 'auto';
+}
+
+:root {
+  --gray-900: #111114;
+  --gray-800: #222224;
+  --gray-700: #444444;
+  --gray-600: #666664;
+  --gray-500: #888884;
+  --gray-400: #aaaaa4;
+  --gray-300: #ccccc4;
+  --gray-200: #e2e2e4;
+  --gray-100: #f9f9f9;
+  --white: white;
+  --blue: #4299e1;
+  --red: #f56565;
+  --text-decoration-color: var(--gray-400);
+  --text-color: var(--gray-800);
+  --focus-ring-color: var(--blue);
+  --border-radius: 4px;
+}
+
+::selection,
+::-moz-selection {
+  background: var(--focus-ring-color); /* WebKit/Blink Browsers */
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-weight: 400;
+  line-height: 1.563;
+  color: var(--text-color);
+  caret-color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: var(--gray-900);
+    caret-color: white;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-bottom: 1rem;
+margin-top: 1em;
+}
+
+
+/* List
+––––––––––––––––––––––––––––––––– */
+ul {
+  margin: 0;
+  padding: 0 1px;
+  list-style: disc outside;
+  font-variant-numeric: tabular-nums;
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li {
+  list-style-position: inside;
+}
+
+/* Links
+––––––––––––––––––––––––––––––––– */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color);
+  -webkit-text-decoration-color: var(--text-decoration-color);
+  border-radius: 5px;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-decoration-color: var(--gray-900);
+  }
+}
+
+@media (hover: hover) and (prefers-color-scheme: dark) {
+  a:hover {
+    text-decoration-color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    text-decoration-color: var(--gray-600);
+    -webkit-text-decoration-color: var(--gray-600);
+  }
+}
+
+a:focus-visible {
+  box-shadow: 0 0 0 2px var(--focus-ring-color);
+  outline: none;
+}
+
+/* Keyboard
+––––––––––––––––––––––––––––––––– */
+kbd {
+  display: inline-block;
+  padding: 0 0.328rem;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
     monospace;
+  font-size: 11px;
+  color: var(--gray-700);
+  vertical-align: middle;
+  background-color: var(--gray-100);
+  border: solid 1px var(--gray-300);
+  border-bottom: solid 2px var(--gray-500);
+  border-radius: 5px;
 }

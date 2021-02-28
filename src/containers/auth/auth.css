@@ -1,0 +1,10 @@
+.Auth {
+    width: 65%;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 50px;
+}
+.Link {
+    color: darkturquoise;
+    cursor: pointer;
+}

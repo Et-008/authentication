@@ -1,0 +1,17 @@
+.LoginForm {
+  width: 65%;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.Login {
+  padding: 1rem;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--border-radius);
+}
+
+.Login label:first-child,
+.Login .form-control:first-child {
+  margin-top: 0;
+}
