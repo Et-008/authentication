@@ -14,7 +14,7 @@ const Login = (props) => {
       password: '',
     },
     onSubmit: async (values) => {
-      await sleep(500);
+      await sleep(2000);
       props.Authenticate(values);
     },
     validationSchema: Yup.object({

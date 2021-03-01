@@ -8,3 +8,6 @@
     color: darkturquoise;
     cursor: pointer;
 }
+.ErrorDisplay {
+	color: red;
+}
